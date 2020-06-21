@@ -1,0 +1,117 @@
+body {
+
+  background-image: url('s1.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+.f{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 15px 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 655px;
+  top: 290px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+.l{
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 15px 30px;
+  cursor: pointer;
+  position: absolute;
+  left:520px;
+  top: 350px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+.s{
+  background-color: #f44336;
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 15px 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 670px;
+  top: 360px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+.r{
+  background-color: #99CCCC;
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 15px 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 800px;
+  top: 350px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+
+.b{
+  background-color: #CCCC33;
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 15px 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 655px;
+  top: 430px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+
+}
+.s:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.f:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.b:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.l:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.r:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+h1{
+  color: white;
+}
