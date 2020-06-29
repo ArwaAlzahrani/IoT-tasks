@@ -5,5 +5,6 @@ Task1
 
 Task2
 
-<b>Task3<b>
+<b>Task3
+  
 Showing the robot direction depending on the inputs+draws simulation lines.
