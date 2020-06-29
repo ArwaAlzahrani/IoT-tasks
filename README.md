@@ -5,9 +5,11 @@ Task1
 
 Desineing a control panel interface. 
 
+
 Task2
 
 Connect the control panel with the database, to control the robot movement. 
+
 
 Task3  
 
