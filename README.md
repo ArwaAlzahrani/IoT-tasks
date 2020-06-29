@@ -1,7 +1,7 @@
 # IoT tasks
 This file contains the tasks that I did in my main track IoT for my Cooperative Training at Smart Methods. 
 
-Task1
+Task1</b>
 Desineing a control panel interface. 
 
 Task2
