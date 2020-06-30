@@ -18,4 +18,4 @@ Showing the robot direction depending on the inputs+draws simulation lines.
 
 #Task4
 
-Creating app to View the control panel on mobile devices.
+Creating an app to view the robot control panel on mobile devices.
