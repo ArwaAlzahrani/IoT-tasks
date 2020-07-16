@@ -34,6 +34,8 @@ echo'<i style="color:white ;font-size:18px;">
     <button class="s" name="stop">Stop</button>
     <button class="r" name="right">Right</button>
     <button class="b" name="back">Backwards</button>
+    <a href="http://localhost:8888/MyTask/Control%20Panel%20Details.php" class="m">Map</a>
+
   </form>
 
 
@@ -122,6 +124,19 @@ echo'<i style="color:white ;font-size:18px;">
 
 
 </body>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "95c700c9-2300-4c82-b91e-e28d9f6eaa2f", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "c60a8977-aec4-4eee-aba8-86f98a2b8539", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 
 </html>
 

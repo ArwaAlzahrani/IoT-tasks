@@ -15,7 +15,7 @@ body {
   padding: 15px 30px;
   cursor: pointer;
   position: absolute;
-  left: 655px;
+  left: 650px;
   top: 290px;
   font-weight: bold;
   border-radius: 15px;
@@ -31,8 +31,8 @@ body {
   padding: 15px 30px;
   cursor: pointer;
   position: absolute;
-  left:520px;
-  top: 350px;
+  left:550px;
+  top: 360px;
   font-weight: bold;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -47,7 +47,7 @@ body {
   padding: 15px 30px;
   cursor: pointer;
   position: absolute;
-  left: 670px;
+  left:670px;
   top: 360px;
   font-weight: bold;
   border-radius: 15px;
@@ -64,7 +64,7 @@ body {
   cursor: pointer;
   position: absolute;
   left: 800px;
-  top: 350px;
+  top: 360px;
   font-weight: bold;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -79,13 +79,30 @@ body {
   padding: 15px 30px;
   cursor: pointer;
   position: absolute;
-  left: 655px;
+  left:650px;
   top: 430px;
   font-weight: bold;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 
 }
+
+.m{
+  background-color: Purple;
+  border: none;
+  color: white;
+  font-size: 17px;
+  padding: 15px 30px;
+  cursor: pointer;
+  position: absolute;
+  left:670px;
+  top: 130px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+
 .s:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
