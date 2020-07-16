@@ -1,0 +1,222 @@
+{
+  "intents": [
+    {
+      "intent": "RobotServices",
+      "examples": [
+        {
+          "text": "What does this buttons do?"
+        },
+        {
+          "text": "How can i control the robot movement?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greating",
+      "examples": [
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Welcome"
+        },
+        {
+          "text": "Slam"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "EndChat",
+      "examples": [
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "Problem solved"
+        },
+        {
+          "text": "Thanks"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ReportAProblem",
+      "examples": [
+        {
+          "text": "the buttons not working"
+        },
+        {
+          "text": "Map buttons doesn't appear"
+        },
+        {
+          "text": "I have a problem with the buttons"
+        },
+        {
+          "text": "I can't use the control panel buttons"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Greating",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi"
+              },
+              {
+                "text": "Hello"
+              },
+              {
+                "text": "Welcome"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Greating",
+      "dialog_node": "node_7_1594938852907",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "ReportAProblem",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please refresh the page and you may check your connection"
+              },
+              {
+                "text": "Your problem will be escalated to the IT department"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ReportAProblem",
+      "dialog_node": "node_9_1594937494688",
+      "previous_sibling": "node_7_1594938852907"
+    },
+    {
+      "type": "standard",
+      "title": "RobotServices",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In this control panel you have 5 buttons to control the robot movement, the forward button will guide the robot to move forward, the backward button will guide the robot to move backwards, the right button will guide the robot to move to the right direction, the left button will guide the robot to move to the left direction and the stop button will stop the movement."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#RobotServices",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1594938115853",
+      "previous_sibling": "node_9_1594937494688"
+    },
+    {
+      "type": "standard",
+      "title": "EndChat",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for your contact"
+              },
+              {
+                "text": "Thank you, the agent will leave the chat"
+              },
+              {
+                "text": "Any Time"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#EndChat",
+      "dialog_node": "node_9_1594938502110",
+      "previous_sibling": "node_3_1594938115853"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I'm your assistant for getting familiar with the robot control panel, this chatbot created by Arwa, Reema and Abdulrahman, What can I help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
