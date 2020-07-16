@@ -22,4 +22,14 @@ Creating an app to view the robot control panel on mobile devices.
 
 #Task5
 
-Creating a Chatbot app using MIT App Inventor.
+Creating a Voice Chatbot app using MIT App Inventor.
+
+
+#Task6
+
+Creating a written Chatbot using IBM Watson assistant.
+
+
+#Task7
+
+Integraete the written Chatbot into my robot control panel .
